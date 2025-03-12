@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Countdown Widget</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="countdown-container">
-        <h1 id="countdown">00.00.00</h1>
+    <div class="widget">
+        <div class="content">
+            <div class="date">
+                <span id="date">13 Feb</span>
+                <span id="day">Sat</span>
+            </div>
+            <div class="clock">
+                <span class="flip" id="hours">05</span>
+                <span class="separator">:</span>
+                <span class="flip" id="minutes">02</span>
+                <span class="separator">:</span>
+                <span class="flip" id="seconds">41</span>
+            </div>
+            <div class="to-date">
+                <h4>Remaining from the calculated date : <span id="toDate"></span></h4>
+            </div>
+            <div class="week">Week <span id="week">/</span> Day <span id="dayNum">13</span></div>
+        </div>
+        <div class="configuration">
+            <button class="config-btn">Configure Countdown</button>
+        </div>
     </div>
-    <script src="renderer.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
