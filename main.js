@@ -2,6 +2,7 @@ const { app, BrowserWindow } = require('electron');
 
 let mainWindow;
 
+//app configuration
 app.whenReady().then(() => {
     mainWindow = new BrowserWindow({
         width: 500,

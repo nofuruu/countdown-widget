@@ -1,3 +1,4 @@
+//main function
 function updateClock(){
     let now = new Date();
 
